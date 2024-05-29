@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem;
+  font-size: 1.6rem;
+  color: var(--color-action-btn);
+}
+
+.clear {
+  cursor: pointer;
+}
+
+.clear:hover {
+  color: var(--color-list-item);
+}
+
+.clear:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    display: none;
+  }
+}

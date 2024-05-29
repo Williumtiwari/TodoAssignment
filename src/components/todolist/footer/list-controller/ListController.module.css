@@ -1,0 +1,32 @@
+.list-controllers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-action-btn);
+}
+
+.list-controllers div {
+  cursor: pointer;
+}
+
+.list-controllers div:not(:first-child) {
+  margin-left: 1.6rem;
+}
+
+.list-controllers div:active {
+  transform: scale(0.98);
+}
+
+.list-controllers div:hover {
+  color: var(--color-list-item);
+}
+
+.active {
+  color: hsl(220, 98%, 61%) !important;
+}
+
+@media screen and (max-width: 500px) {
+  .mobile {
+    display: none;
+  }
+}

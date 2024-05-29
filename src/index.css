@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root,
+:root.dark-theme {
+  --main-bg: hsl(235, 21%, 11%);
+  --list-bg: hsl(235, 24%, 19%);
+  --color-list-item: hsl(234, 39%, 85%);
+  --color-logo: hsl(236, 33%, 92%);
+  --color-action-btn: hsl(234, 11%, 52%);
+  --color-text-checked: hsl(233, 14%, 35%);
+  --color-circle-unfocus: hsl(237, 14%, 26%);
+
+  --hero-desktop-bg: url('./images/bg-desktop-dark.jpg');
+  --hero-mobile-bg: url('./images/bg-mobile-dark.jpg');
+}
+:root.light-theme {
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --list-bg: hsl(0, 0%, 98%);
+  --main-bg: hsl(236, 33%, 92%);
+  --color-logo: hsl(236, 33%, 92%);
+  --color-circle-unfocus: hsl(233, 11%, 84%);
+  --color-action-btn: hsl(236, 9%, 61%);
+  --color-text-checked: hsl(236, 9%, 61%);
+  --color-list-item: hsl(235, 19%, 35%);
+
+  --hero-desktop-bg: url('./images/bg-desktop-light.jpg');
+  --hero-mobile-bg: url('./images/bg-mobile-light.jpg');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: 'Josefin Sans', sans-serif;
+
+  background-color: var(--main-bg);
+  padding: 2rem;
+}
